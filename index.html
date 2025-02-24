@@ -67,46 +67,128 @@
       </nav>
     </header>
     <main>
-      <!-- home Section -->
+      <!-- Bootstrap CSS -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+
+      <!-- Home Section -->
       <section id="home" class="home">
         <div class="container text-light text-center">
           <h1 class="pt-5 mt-5 fw-bold display-2">Welcome to AKG Hotel</h1>
           <p>HOTEL & RESORT</p>
         </div>
+
         <div
           class="container text-light p-2"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
-          <form action="">
-            <h5 class="text-center py-3 fw-bold fs-3">Check Availablity</h5>
+          <form id="bookingForm" novalidate>
+            <h5 class="text-center fw-bold fs-3">Check Availability</h5>
             <div class="Availablity">
-              <label class="form-label" for="">Check In</label>
-              <input class="form-control w-50 mb-2 Avai" type="date" />
-              <label class="form-label" for="">Check Out</label>
-              <input class="form-control w-50 mb-2 Avai" type="date" />
-              <label class="form-label" for="">Room Type</label>
-              <select class="form-control w-50 mb-2 Avai" name="" id="">
-                <option value="#">-----Select Room Type-----</option>
-                <option value="Standaed Room">Standaed Room</option>
-                <option value="Famliy Room">Famliy Room</option>
+              <!-- Name -->
+              <label class="form-label">Name</label>
+              <input
+                id="name"
+                class="form-control w-75"
+                type="text"
+                placeholder="Enter Your Name"
+              />
+              <div class="invalid-feedback">Please enter your name.</div>
+
+              <!-- Check In -->
+              <label class="form-label">Check In</label>
+              <input id="checkIn" class="form-control w-75" type="date" />
+              <div class="invalid-feedback">Please select a check-in date.</div>
+
+              <!-- Check Out -->
+              <label class="form-label">Check Out</label>
+              <input id="checkOut" class="form-control w-75" type="date" />
+              <div class="invalid-feedback">
+                Please select a check-out date.
+              </div>
+
+              <!-- Room Type -->
+              <label class="form-label">Room Type</label>
+              <select id="roomType" class="form-control w-75">
+                <option value="">-----Select Room Type-----</option>
+                <option value="Standard Room">Standard Room</option>
+                <option value="Family Room">Family Room</option>
                 <option value="Single Room">Single Room</option>
                 <option value="Luxury Room">Luxury Room</option>
                 <option value="Deluxe Room">Deluxe Room</option>
               </select>
-              <label class="form-label" for="">Room Number</label>
+              <div class="invalid-feedback">Please select a room type.</div>
+
+              <!-- Room Number -->
+              <label class="form-label">Room Number</label>
               <input
-                class="form-control w-50 Avai"
+                id="roomNumber"
+                class="form-control w-75"
                 type="number"
                 placeholder="Room Number"
               />
-              <button class="btn btn-primary align-items-center mt-3">
+              <div class="invalid-feedback">
+                Please enter a valid room number.
+              </div>
+
+              <button type="submit" class="btn btn-primary mt-3">
                 Room Booking
               </button>
             </div>
           </form>
         </div>
       </section>
+
+      <!-- Booking Status Modal -->
+      <div
+        class="modal fade"
+        id="bookingModal"
+        tabindex="-1"
+        aria-labelledby="bookingModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="bookingModalLabel">Booking Status</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p><strong>Name:</strong> <span id="modalName"></span></p>
+              <p><strong>Check In:</strong> <span id="modalCheckIn"></span></p>
+              <p>
+                <strong>Check Out:</strong> <span id="modalCheckOut"></span>
+              </p>
+              <p>
+                <strong>Room Type:</strong> <span id="modalRoomType"></span>
+              </p>
+              <p>
+                <strong>Room Number:</strong> <span id="modalRoomNumber"></span>
+              </p>
+              <p class="text-success fw-bold">
+                Your booking has been confirmed!
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Our Rooms -->
       <section id="rooms" class="bg-light">
         <!-- room 1 -->
@@ -447,5 +529,7 @@
     <script>
       AOS.init();
     </script>
+    <!-- index.js -->
+     <script src="./index.js"></script>
   </body>
 </html>

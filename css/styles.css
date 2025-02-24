@@ -2,15 +2,14 @@
   background-image: url(../Assets/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* width: 100%; */
-  height: 100vh;
+  height: 120vh;
 }
 .Availablity{
-  margin-left: 460px;
+  margin-left: 350px;
 }
 
 @media only screen and (max-width: 480px) {
   .Availablity{
-    margin-left: 100px;
+    margin-left: 80px;
   }
 }
