@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hotel Booking</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <header>
+      <nav class="navbar navbar-expand-sm fixed-top bg-light shadow border">
+        <div class="container">
+          <a class="navbar-brand" href="#home">
+            <h1>AKG Hotel</h1>
+          </a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul
+              class="navbar-nav ms-auto gap-lg-4 fw-bold text-light mt-2 mt-lg-0"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rooms">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- home Section -->
+      <section id="home" class="home">
+        <div class="container text-light text-center">
+          <h1 class="pt-5 mt-5 fw-bold display-2">Welcome to AKG Hotel</h1>
+          <p>HOTEL & RESORT</p>
+        </div>
+        <div
+          class="container text-light p-2"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <form action="">
+            <h5 class="text-center py-3 fw-bold fs-3">Check Availablity</h5>
+            <div class="Availablity">
+              <label class="form-label" for="">Check In</label>
+              <input class="form-control w-50 mb-2 Avai" type="date" />
+              <label class="form-label" for="">Check Out</label>
+              <input class="form-control w-50 mb-2 Avai" type="date" />
+              <label class="form-label" for="">Room Type</label>
+              <select class="form-control w-50 mb-2 Avai" name="" id="">
+                <option value="#">-----Select Room Type-----</option>
+                <option value="Standaed Room">Standaed Room</option>
+                <option value="Famliy Room">Famliy Room</option>
+                <option value="Single Room">Single Room</option>
+                <option value="Luxury Room">Luxury Room</option>
+                <option value="Deluxe Room">Deluxe Room</option>
+              </select>
+              <label class="form-label" for="">Room Number</label>
+              <input
+                class="form-control w-50 Avai"
+                type="number"
+                placeholder="Room Number"
+              />
+              <button class="btn btn-primary align-items-center mt-3">
+                Room Booking
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Our Rooms -->
+      <section id="rooms" class="bg-light">
+        <!-- room 1 -->
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="display-6 text-center p-5">Our Rooms</h1>
+          <div class="row">
+            <div class="col-sm-4 pb-4">
+              <div class="card shadow">
+                <img class="w-100" src="./Assets/1.Standard_Room.webp" alt="" />
+                <div class="card-body">
+                  <h4 class="text-center">Standaed Room</h4>
+                  <h6 class="text-center">₹.2500 / per day</h6>
+                </div>
+              </div>
+            </div>
+            <!-- room 2 -->
+            <div class="col-sm-4 pb-4">
+              <div class="card shadow">
+                <img class="w-100" src="./Assets/2.Famli_Room.webp" alt="" />
+                <div class="card-body">
+                  <h4 class="text-center">Famliy Room</h4>
+                  <h6 class="text-center">₹.3500 / per day</h6>
+                </div>
+              </div>
+            </div>
+            <!-- room 3 -->
+            <div class="col-sm-4 pb-4">
+              <div class="card shadow">
+                <img class="w-100" src="./Assets/3.Single_Room.webp" alt="" />
+                <div class="card-body">
+                  <h4 class="text-center">Single Room</h4>
+                  <h6 class="text-center">₹.1000 / per day</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Rooms -->
+      <section class="bg-light">
+        <!-- room 1 -->
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+          <div class="row">
+            <div class="col-sm-4 pb-4">
+              <div class="card shadow">
+                <img class="w-100" src="./Assets/1.Standard_Room.webp" alt="" />
+                <div class="card-body">
+                  <h4 class="text-center">Deluxe Room</h4>
+                  <h6 class="text-center">₹.8000 / per day</h6>
+                </div>
+              </div>
+            </div>
+            <!-- room 2 -->
+            <div class="col-sm-4 pb-4">
+              <div class="card shadow">
+                <img class="w-100" src="./Assets/2.Famli_Room.webp" alt="" />
+                <div class="card-body">
+                  <h4 class="text-center">Luxury Room</h4>
+                  <h6 class="text-center">₹.5000 / per day</h6>
+                </div>
+              </div>
+            </div>
+            <!-- room 3 -->
+            <div class="col-sm-4 pb-4">
+              <div class="card shadow">
+                <img class="w-100" src="./Assets/3.Single_Room.webp" alt="" />
+                <div class="card-body">
+                  <h4 class="text-center">Single Room</h4>
+                  <h6 class="text-center">₹.1000 / per day</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About us -->
+      <section id="about" class="bg-info pb-1">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
+          <h1 class="display-6 text-center p-5">About</h1>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="w-100" src="./Assets/about_1.png.webp" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+                voluptas, accusamus quo saepe sint optio maxime necessitatibus!
+                Nesciunt accusantium, iusto ut repudiandae assumenda nisi magni
+                neque, vel odio tempore voluptatibus!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi fuga sit quas nesciunt quam, quisquam, facilis dolor
+                eum nam deleniti voluptatibus odio, vero unde est id blanditiis
+                fugiat doloremque odit.
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                eum repellendus iste voluptatibus aliquid distinctio, nihil
+                saepe aspernatur ipsa rem. Harum, iusto laboriosam. Repellendus
+                nulla optio distinctio dolore eligendi dolorum!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit maiores deserunt possimus repudiandae
+                necessitatibus cum aliquam rerum voluptates odio fugiat sequi
+                delectus velit natus sit hic laborum, ipsa nulla tenetur.
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <img class="w-100" src="./Assets/about_2.png.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- hotel features -->
+      <section class="bg-light">
+        <h1 class="display-6 text-center p-5">Hotel Features</h1>
+        <div
+          class="container text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="row">
+            <div class="col-sm-3 border border-dark p-2">
+              <i class="fa-solid fa-person-swimming h1"></i>
+              <h3>Swimming Pool</h3>
+            </div>
+            <div class="col-sm-3 border border-dark p-2">
+              <i class="fa-solid fa-hotel h1"></i>
+              <h3>Hotel Teller</h3>
+            </div>
+            <div class="col-sm-3 border border-dark p-2">
+              <i class="fa-solid fa-person-running h1"></i>
+              <h3>Fire Exit</h3>
+            </div>
+            <div class="col-sm-3 border border-dark p-2">
+              <i class="fa-solid fa-car h1"></i>
+              <h3>Car Parking</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-light">
+        <div
+          class="container pt-5 text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="row">
+            <div class="col-sm-3 border border-dark p-2">
+              <i class="fa-solid fa-fan h1"></i>
+              <h3>Hair Dryer</h3>
+            </div>
+            <div class="col-sm-3 border border-dark p-2">
+              <i class="fa-solid fa-wine-bottle h1"></i>
+              <h3>Minibar</h3>
+            </div>
+            <div class="col-sm-3 border border-dark p-2">
+              <i class="fa-solid fa-martini-glass-citrus h1"></i>
+              <h3>Drinks</h3>
+            </div>
+            <div class="col-sm-3 border border-dark p-2">
+              <i class="fa-solid fa-plane h1"></i>
+              <h3>Car Airport</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- our gallery -->
+      <section>
+        <div class="container">
+          <h1 class="display-6 text-center p-5">Our Gallery</h1>
+          <div class="row mb-3" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-sm-3">
+              <img class="w-100" src="./Assets/img_4.jpg.webp" alt="" />
+            </div>
+            <div class="col-sm-3">
+              <img class="w-100" src="./Assets/img_5.jpg.webp" alt="" />
+            </div>
+            <div class="col-sm-3">
+              <img class="w-100" src="./Assets/img_6.jpg.webp" alt="" />
+            </div>
+            <div class="col-sm-3">
+              <img class="w-100" src="./Assets/3.Single_Room.webp" alt="" />
+            </div>
+          </div>
+
+          <div class="row mb-3" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-sm-3">
+              <img class="w-100" src="./Assets/1.Standard_Room.webp" alt="" />
+            </div>
+            <div class="col-sm-3">
+              <img class="w-100" src="./Assets/2.Famli_Room.webp" alt="" />
+            </div>
+            <div class="col-sm-3">
+              <img class="w-100" src="./Assets/3.png_food.webp" alt="" />
+            </div>
+            <div class="col-sm-3">
+              <img class="w-100" src="./Assets/4.Room.webp" alt="" />
+            </div>
+          </div>
+          <div class="row mb-3" data-aos="fade-up" data-aos-duration="1000">
+            <div class="col-sm-3">
+              <img class="w-100" src="./Assets/g1.webp" alt="" />
+            </div>
+            <div class="col-sm-3">
+              <img class="w-100" src="./Assets/g5.jpg" alt="" />
+            </div>
+            <div class="col-sm-3">
+              <img class="w-100" src="./Assets/g3.webp" alt="" />
+            </div>
+            <div class="col-sm-3">
+              <img class="w-100" src="./Assets/g4.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section id="contact" class="bg-light">
+        <h1 class="display-6 text-center p-5">Contact</h1>
+        <div class="container mb-3" data-aos="fade-up" data-aos-duration="1000">
+          <div class="row">
+            <div class="col-sm-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5130.997783135969!2d78.31100840337524!3d12.28632099701811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac474eb4fa58c7%3A0x6120793aad6c9722!2sAKG%20Thirumana%20Mandapam!5e0!3m2!1sen!2sin!4v1739855896187!5m2!1sen!2sin"
+                width="350"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="col-sm-6">
+              <form action="">
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Phone</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Enter Your Phone Number"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Enter Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-primary">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="bg-primary">
+        <div class="container text-white pt-3">
+          <div class="row">
+            <div class="col-md-4">
+              <h1 style="font-size: 25px">Quicklinks</h1>
+              <p><a class="nav-link" href="#home">Home</a></p>
+              <p><a class="nav-link" href="#about">About</a></p>
+              <p><a class="nav-link" href="#rooms">Rooms</a></p>
+              <p><a class="nav-link" href="#contact">Contact</a></p>
+            </div>
+
+            <div class="col-md-4">
+              <h1 style="font-size: 25px">Follow Us</h1>
+              <i class="fa-brands fa-linkedin h1 p-1"></i>
+              <i class="fa-brands fa-github h1 p-1"></i>
+              <i class="fa-brands fa-square-instagram h1 p-1"></i>
+              <i class="fa-brands fa-twitter h1 p-1"></i>
+              <i class="fa-brands fa-square-whatsapp h1 p-1"></i>
+            </div>
+            <div class="col-md-4">
+              <h1 style="font-size: 25px">Address</h1>
+              <p>
+                AKG Mandapam, <br />
+                Arasampatti (Po), <br />
+                Pochampalli (Tk), <br />
+                Krishnagiri (Dt),<br />
+                Tamil Nadu - 635 201.
+              </p>
+            </div>
+            <p class="Copyright text-center text-white">
+              Copyright © 2025 All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
