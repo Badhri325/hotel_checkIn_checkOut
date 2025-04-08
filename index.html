@@ -67,75 +67,83 @@
       </nav>
     </header>
     <main>
-      <!-- Home Section -->
+      <!-- Home Section Start-->
       <section id="home" class="home">
         <div class="container text-light text-center">
           <h1 class="pt-5 mt-5 fw-bold display-2">Welcome to Badhri Hotel</h1>
           <p>HOTEL & RESORT</p>
         </div>
-        <div
-          class="container text-light p-2"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          <form id="bookingForm" novalidate>
-            <h5 class="text-center fw-bold fs-3">Check Availability</h5>
-            <div class="Availablity">
-              <!-- Name -->
-              <label class="form-label">Name</label>
-              <input
-                id="name"
-                class="form-control w-75"
-                type="text"
-                placeholder="Enter Your Name"
-              />
-              <div class="invalid-feedback">Please enter your name.</div>
+      </section>
+      <!-- Home Section End-->
 
-              <!-- Check In -->
-              <label class="form-label">Check In</label>
-              <input id="checkIn" class="form-control w-75" type="date" />
-              <div class="invalid-feedback">Please select a check-in date.</div>
+      <!-- Check Availability Start -->
+      <div
+        class="container text-light p-2"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <form id="bookingForm" novalidate>
+          <h5 class="text-center fw-bold fs-3 mb-4">Room Booking</h5>
+          <div class="Availablity">
+            <!-- Name -->
+            <label class="form-label">Name</label>
+            <input
+              id="name"
+              class="form-control custom-input"
+              type="text"
+              placeholder="Enter Your Name"
+            />
+            <div class="invalid-feedback">Please enter your name.</div>
 
-              <!-- Check Out -->
-              <label class="form-label">Check Out</label>
-              <input id="checkOut" class="form-control w-75" type="date" />
-              <div class="invalid-feedback">
-                Please select a check-out date.
-              </div>
+            <!-- Check In -->
+            <label class="form-label">Check In</label>
+            <input id="checkIn" class="form-control custom-input" type="date" />
+            <div class="invalid-feedback">Please select a check-in date.</div>
 
-              <!-- Room Type -->
-              <label class="form-label">Room Type</label>
-              <select id="roomType" class="form-control w-75">
-                <option value="">-----Select Room Type-----</option>
-                <option value="Standard Room">Standard Room</option>
-                <option value="Family Room">Family Room</option>
-                <option value="Single Room">Single Room</option>
-                <option value="Luxury Room">Luxury Room</option>
-                <option value="Deluxe Room">Deluxe Room</option>
-              </select>
-              <div class="invalid-feedback">Please select a room type.</div>
+            <!-- Check Out -->
+            <label class="form-label">Check Out</label>
+            <input
+              id="checkOut"
+              class="form-control custom-input"
+              type="date"
+            />
+            <div class="invalid-feedback">Please select a check-out date.</div>
 
-              <!-- Room Number -->
-              <label class="form-label">Room Number</label>
-              <input
-                id="roomNumber"
-                class="form-control w-75"
-                type="number"
-                placeholder="Room Number"
-              />
-              <div class="invalid-feedback">
-                Please enter a valid room number.
-              </div>
+            <!-- Room Type -->
+            <label class="form-label">Room Type</label>
+            <select id="roomType" class="form-control custom-input">
+              <option value="">Select Room Type</option>
+              <option value="Standard Room">Standard Room</option>
+              <option value="Family Room">Family Room</option>
+              <option value="Single Room">Single Room</option>
+              <option value="Luxury Room">Luxury Room</option>
+              <option value="Deluxe Room">Deluxe Room</option>
+            </select>
+            <div class="invalid-feedback">Please select a room type.</div>
 
-              <button type="submit" class="btn btn-primary mt-3">
+            <!-- Room Number -->
+            <label class="form-label">Room Number</label>
+            <input
+              id="roomNumber"
+              class="form-control custom-input"
+              type="number"
+              placeholder="Room Number"
+            />
+            <div class="invalid-feedback">
+              Please enter a valid room number.
+            </div>
+
+            <!-- Submit -->
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary mt-4">
                 Room Booking
               </button>
             </div>
-          </form>
-        </div>
-      </section>
+          </div>
+        </form>
+      </div>
 
-      <!-- Booking Status Modal -->
+      <!-- Booking Status Modal Start-->
       <div
         class="modal fade"
         id="bookingModal"
@@ -157,19 +165,13 @@
             <div class="modal-body">
               <p><strong>Name:</strong> <span id="modalName"></span></p>
               <p><strong>Check In:</strong> <span id="modalCheckIn"></span></p>
-              <p>
-                <strong>Check Out:</strong> <span id="modalCheckOut"></span>
-              </p>
-              <p>
-                <strong>Room Type:</strong> <span id="modalRoomType"></span>
-              </p>
-              <p>
-                <strong>Room Number:</strong> <span id="modalRoomNumber"></span>
-              </p>
-              <p class="text-success fw-bold">
-                Your booking has been confirmed!
-              </p>
+              <p><strong>Check Out:</strong> <span id="modalCheckOut"></span></p>
+              <p><strong>Room Type:</strong> <span id="modalRoomType"></span></p>
+              <p><strong>Room Number:</strong> <span id="modalRoomNumber"></span></p>
+              <p><strong>Total Days:</strong> <span id="modalDays"></span></p>
+              <p><strong>Total Amount:</strong> <span id="modalAmount"></span></p>
             </div>
+            
             <div class="modal-footer">
               <button
                 type="button"
@@ -182,7 +184,10 @@
           </div>
         </div>
       </div>
-      <!-- Our Rooms -->
+      <!-- Booking Status Modal End-->
+      <!-- Check Availability End -->
+
+      <!-- Our Rooms Start-->
       <section id="rooms" class="bg-light">
         <!-- room 1 -->
         <div class="container" data-aos="fade-up" data-aos-duration="1000">
@@ -257,8 +262,9 @@
           </div>
         </div>
       </section>
+      <!-- Our Rooms End-->
 
-      <!-- About us -->
+      <!-- About us Start-->
       <section id="about" class="bg-info pb-1">
         <div class="container" data-aos="fade-up" data-aos-duration="1000">
           <h1 class="display-6 fw-bold text-center p-5">About</h1>
@@ -268,14 +274,14 @@
             </div>
             <div class="col-sm-4">
               <p>
-                Welcome to AKG Hotel, where comfort meets elegance! Located in a
-                prime destination, AKG Hotel offers a luxurious and relaxing
-                stay for business and leisure travelers alike. Our hotel is
-                designed to provide world-class hospitality with modern
+                Welcome to BADHRI Hotel, where comfort meets elegance! Located
+                in a prime destination, BADHRI Hotel offers a luxurious and
+                relaxing stay for business and leisure travelers alike. Our
+                hotel is designed to provide world-class hospitality with modern
                 amenities, spacious accommodations, and exceptional service.
               </p>
               <p>
-                At AKG Hotel, we prioritize guest satisfaction, ensuring a
+                At BADHRI Hotel, we prioritize guest satisfaction, ensuring a
                 seamless experience with well-appointed rooms, fine dining, and
                 personalized services. Whether you're here for a vacation, a
                 business trip, or a special occasion, our dedicated team is
@@ -283,7 +289,7 @@
               </p>
               <p>
                 Experience comfort, convenience, and luxury like never
-                before—AKG Hotel, your home away from home!
+                before—BADHRI Hotel, your home away from home!
               </p>
             </div>
             <div class="col-sm-4">
@@ -292,8 +298,9 @@
           </div>
         </div>
       </section>
+      <!-- About us End-->
 
-      <!-- hotel features -->
+      <!-- hotel features Start-->
       <section class="bg-light">
         <h1 class="display-6 fw-bold text-center p-5">Hotel Features</h1>
         <div
@@ -347,7 +354,9 @@
           </div>
         </div>
       </section>
-      <!-- our gallery -->
+      <!-- hotel features End-->
+
+      <!-- our gallery Start-->
       <section>
         <div class="container">
           <h1 class="display-6 fw-bold text-center p-5">Our Gallery</h1>
@@ -396,8 +405,9 @@
           </div>
         </div>
       </section>
+      <!-- our gallery End-->
 
-      <!-- contact -->
+      <!-- Contact Start-->
       <section id="contact" class="bg-light">
         <h1 class="display-6 fw-bold text-center p-5">Contact Us</h1>
         <div class="container mb-3" data-aos="fade-up" data-aos-duration="1000">
@@ -405,9 +415,9 @@
             <div class="col-sm-6">
               <div class="shadow rounded">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5130.997783135969!2d78.31100840337524!3d12.28632099701811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac474eb4fa58c7%3A0x6120793aad6c9722!2sAKG%20Thirumana%20Mandapam!5e0!3m2!1sen!2sin!4v1739855896187!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5130.997783135969!2d78.31100840337524!3d12.28632099701811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac474eb4fa58c7%3A0x6120793aad6c9722!2sBADHRI%20Thirumana%20Mandapam!5e0!3m2!1sen!2sin!4v1739855896187!5m2!1sen!2sin"
                   width="100%"
-                  height="480"
+                  height="540px"
                   style="border: 0"
                   allowfullscreen=""
                   loading="lazy"
@@ -466,6 +476,7 @@
           </div>
         </div>
       </section>
+      <!-- Contact End-->
     </main>
 
     <footer>
